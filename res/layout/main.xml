@@ -1,12 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
-
-</LinearLayout>
+    android:orientation="vertical" 
+    android:background="#ffffffff"
+    >
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:layout_margin="0dp"
+		android:textSize="35sp"
+		android:text="@string/app_name"
+		android:background="#ff83c1f2" 
+		android:textColor="#000"   
+	/>
+	<TableLayout  
+	    android:id="@+id/tableLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:stretchColumns="*">
+	    <TableRow
+	        android:id="@+id/tableRow1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="20dp"
+	        android:paddingBottom="10dp">
+	        
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            android:drawableTop="@drawable/telephone"
+	            />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            android:drawableTop="@drawable/rss"
+	            />
+	        <Button
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            android:drawableTop="@drawable/computer"
+	            />
+	    </TableRow>
+	    	   
+	    <TableRow
+	        android:id="@+id/tableRow2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp">
+	        
+	        <Button
+	            android:id="@+id/buttonSpacer"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            />
+	        <Button
+	            android:id="@+id/buttonSpacer"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            />
+	        <Button
+	            android:id="@+id/buttonSpacer"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/transparent"
+	            />
+	    </TableRow>
+	</TableLayout>
+</TableLayout>
