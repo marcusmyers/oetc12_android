@@ -32,18 +32,21 @@
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:background="@android:color/transparent"
+	            android:id="@+id/buttonContact"
 	            android:drawableTop="@drawable/telephone"
 	            />
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:background="@android:color/transparent"
+	            android:id="@+id/buttonRss"
 	            android:drawableTop="@drawable/rss"
 	            />
 	        <Button
 	            android:layout_width="fill_parent"
 	            android:layout_height="wrap_content"
 	            android:background="@android:color/transparent"
+	            android:id="@+id/buttonWeb"
 	            android:drawableTop="@drawable/computer"
 	            />
 	    </TableRow>

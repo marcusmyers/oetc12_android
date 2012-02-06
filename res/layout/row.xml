@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:weightSum="1.0"
+    android:padding="6dip"
+    >
+    
+    <Button
+        android:layout_width="25dip"
+        android:layout_height="fill_parent"
+        android:layout_weight=".1"
+        
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/telephone"
+        
+        android:layout_marginRight="2dip"
+        
+        android:id="@+id/telContact"
+        android:onClick="myCallHandler" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight=".9" >
+        <TextView
+            android:layout_height="0dip"
+     		android:layout_width="fill_parent"
+     		android:layout_weight="1"
+     		android:textSize="18sp"
+     		android:gravity="center_vertical"
+     		android:id="@+id/textContactName"
+     		android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:id="@+id/textNumber"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical" />
+        
+    </LinearLayout>
+	
+</LinearLayout>

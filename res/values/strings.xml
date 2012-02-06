@@ -3,5 +3,7 @@
 
     <string name="hello">Hello World, Oetc12_androidActivity!</string>
     <string name="app_name">OETC12</string>
+    <string name="titleContact">Contact</string>
+    <string name="titleRss">Apple News</string>
 
 </resources>
