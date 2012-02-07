@@ -17,14 +17,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
 
 public class RssActivity extends Activity implements OnItemClickListener{
 
-	public final String appleFeed = "http://www.apple.com/pr/feeds/pr.rss";
-
+//	public final String appleFeed = "http://www.apple.com/pr/feeds/pr.rss";
+	public final String androidFeed = "http://feeds.feedburner.com/blogspot/hsDu?format=xml";
 	private RSSFeed feed = null;
 	protected GetRssFeed _getRssFeed;
 	ListView itemlist;
@@ -39,7 +38,7 @@ public class RssActivity extends Activity implements OnItemClickListener{
         _getRssFeed = new GetRssFeed();
         // go get our feed!
        try {
-    	   feed = _getRssFeed.execute(appleFeed).get();
+    	   feed = _getRssFeed.execute(androidFeed).get();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

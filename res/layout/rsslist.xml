@@ -26,10 +26,8 @@
         android:layout_height="match_parent"
         android:background="#ffffff"
         android:divider="#ffe25d"
-        android:dividerHeight="3dp" 
-        android:textColor="#000000"
+        android:dividerHeight="2dp" 
         >
-        
 </ListView>
 
 </LinearLayout>
