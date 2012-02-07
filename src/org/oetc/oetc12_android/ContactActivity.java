@@ -23,7 +23,8 @@ public class ContactActivity extends Activity {
 								"Fiscal",
 								"Human Resources",
 								"Grants & Instructional Resources and Materials",
-								"Procurement","Professional Development"};
+								"Procurement",
+								"Professional Development"};
 	
 	private static final String[] numbers = {"614-485-6650",
 											 "614-485-6032",
@@ -31,6 +32,7 @@ public class ContactActivity extends Activity {
 											 "614-485-6016",
 											 "614-485-6000",
 											 "614-485-6046",
+											 "614-485-6000",
 											 "614-485-6000",
 											 "614-485-6048"};
 	

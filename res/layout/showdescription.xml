@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    >
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/details"
+    android:gravity="center"
+	android:textSize="40sp"
+    android:id="@+id/details"
+	android:background="#83c1f2"
+	android:textColor="#000" 
+    />
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:autoLink="all"
+    android:text="story goes here ...."
+    android:id="@+id/storybox"
+	android:textSize="12sp"
+	android:maxLines="25"
+	android:scrollbars="vertical"
+	android:background="#f0f0f0"
+	android:textColor="#000" 
+    />
+<Button
+    android:layout_width="100dp" 
+    android:layout_height="40dp" 
+	android:layout_margin="5dp"
+    android:text="More Info"
+	android:id="@+id/back"
+	android:background="@drawable/green_button"
+	android:textColor="#fff"
+	/>    
+
+</LinearLayout>

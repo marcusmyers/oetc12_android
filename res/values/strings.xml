@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, Oetc12_androidActivity!</string>
     <string name="app_name">OETC12</string>
     <string name="titleContact">Contact</string>
     <string name="titleRss">Apple News</string>
+    
+    <string name="feedTitle">News</string>
+    <string name="details">Details</string>
 
 </resources>

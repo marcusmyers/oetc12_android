@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
-    android:background="#ffffffff"
+    android:background="#ffffff"
     >
 	<TextView 
 		android:layout_width="fill_parent"
@@ -12,7 +12,7 @@
 		android:layout_margin="0dp"
 		android:textSize="35sp"
 		android:text="@string/app_name"
-		android:background="#ff83c1f2" 
+		android:background="#83c1f2" 
 		android:textColor="#000"   
 	/>
 	<TableLayout  

@@ -28,6 +28,7 @@
      		android:layout_width="fill_parent"
      		android:layout_weight="1"
      		android:textSize="18sp"
+     		android:textColor="#ff000000"
      		android:gravity="center_vertical"
      		android:id="@+id/textContactName"
      		android:textStyle="bold" />
@@ -39,6 +40,7 @@
             android:id="@+id/textNumber"
             android:singleLine="true"
             android:ellipsize="marquee"
+     		android:textColor="#ffa6e36b"
             android:gravity="center_vertical" />
         
     </LinearLayout>
