@@ -27,6 +27,9 @@ public class RssActivity extends Activity implements OnItemClickListener{
 
 	private RSSFeed feed = null;
 	protected GetRssFeed _getRssFeed;
+	ListView itemlist;
+	
+	 ArrayAdapter<RSSItem> adapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
@@ -45,8 +48,13 @@ public class RssActivity extends Activity implements OnItemClickListener{
 			e.printStackTrace();
 		}
        
+        itemlist = (ListView) findViewById(R.id.listContact);
+       
         // display UI
-        UpdateDisplay();
+        adapter = UpdateDisplay();
+        itemlist.setAdapter(adapter);
+        
+        itemlist.setOnItemClickListener(this);
 	}
 	
 	 class GetRssFeed extends AsyncTask<String, Integer, RSSFeed>{
@@ -98,20 +106,15 @@ public class RssActivity extends Activity implements OnItemClickListener{
 	    }
 	    
 	    
-	    private void UpdateDisplay()
+	    private ArrayAdapter<RSSItem> UpdateDisplay()
 	    {
-	        ListView itemlist = (ListView) findViewById(R.id.listContact);
-	  
+	        ArrayAdapter<RSSItem> adapter = new ArrayAdapter<RSSItem>(
+	        			this,
+	        			R.layout.rssrow,
+	        			feed.getAllItems());
 	        
-
-	        ArrayAdapter<RSSItem> adapter = new ArrayAdapter<RSSItem>(this,android.R.layout.simple_list_item_1,feed.getAllItems());
-
-	        itemlist.setAdapter(adapter);
-	        
-	        itemlist.setOnItemClickListener(this);
-	        
-	        itemlist.setSelection(0);
-	        
+	        return adapter;
+	       
 	    }
 
 	 public void onItemClick(AdapterView parent, View v, int position, long id)
