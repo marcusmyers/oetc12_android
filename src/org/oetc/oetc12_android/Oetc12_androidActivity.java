@@ -40,7 +40,7 @@ public class Oetc12_androidActivity extends Activity implements OnClickListener 
     {
     	switch(v.getId()){
 	    	case R.id.buttonWeb:
-	    		Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.etech.ohio.gov"));
+	    		Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.guidebook.com/660/"));
 	    		startActivity(web);
 	    		break;
 	    		
