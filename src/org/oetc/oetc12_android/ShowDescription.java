@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
+import android.util.Log;
 import android.view.*;
 
 public class ShowDescription extends Activity 
@@ -23,6 +24,7 @@ public class ShowDescription extends Activity
         
         
         Intent startingIntent = getIntent();
+//        Log.w("ShowDesc", "start description process");
         
         if (startingIntent != null)
         {
@@ -43,6 +45,8 @@ public class ShowDescription extends Activity
         
         }
         
+//        Log.w("ShowDesc", "theStory: "+theStory);
+        
         TextView db= (TextView) findViewById(R.id.storybox);
         db.setText(theStory);
         
@@ -52,7 +56,6 @@ public class ShowDescription extends Activity
         {
             public void onClick(View v) 
             {
-//            	finish();
             	openUrl();
             }
         });        
