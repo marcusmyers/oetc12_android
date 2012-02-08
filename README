@@ -1,3 +1,22 @@
 Ohio Educational Technology Conference '12
 
 This code is for the sample application for OETC12
+
+Hands-on workshop to creating a valuable Android App
+- 2/14/2012 @ 3pm / C216
+Preparing for Android Development
+
+Before you get started make sure your computer meets the requirements by checking out: http://developer.android.com/sdk/requirements.html. We will be using Eclipse v3.7.1 for the integrated development environment(IDE).
+
+Windows
+Download this file:
+http://tech.napoleonareaschools.org/wp-content/uploads/OETC12_win.zip
+
+Mac OS X
+Download this file:
+http://tech.napoleonareaschools.org/wp-content/uploads/OETC12_mac.zip
+
+Follow instructions in README.txt file after you unzip the file to setup the Android development environment.
+
+Code
+https://github.com/marcusmyers/oetc12_android
