@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">OETC12</string>
     <string name="titleContact">Contact</string>
-    <string name="titleRss">Android News</string>
+    <string name="titleRss">Apple News</string>
     
     <string name="feedTitle">News</string>
     <string name="details">Details</string>

@@ -17,13 +17,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
 
 public class RssActivity extends Activity implements OnItemClickListener{
 
-//	public final String appleFeed = "http://www.apple.com/pr/feeds/pr.rss";
-	public final String androidFeed = "http://feeds.feedburner.com/blogspot/hsDu?format=xml";
+	public final String appleFeed = "http://www.apple.com/pr/feeds/pr.rss";
 	private RSSFeed feed = null;
 	protected GetRssFeed _getRssFeed;
 	ListView itemlist;
@@ -38,7 +38,7 @@ public class RssActivity extends Activity implements OnItemClickListener{
         _getRssFeed = new GetRssFeed();
         // go get our feed!
        try {
-    	   feed = _getRssFeed.execute(androidFeed).get();
+    	   feed = _getRssFeed.execute(appleFeed).get();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -49,11 +49,18 @@ public class RssActivity extends Activity implements OnItemClickListener{
        
         itemlist = (ListView) findViewById(R.id.listContact);
        
-        // display UI
-        adapter = UpdateDisplay();
-        itemlist.setAdapter(adapter);
-        
-        itemlist.setOnItemClickListener(this);
+        TextView feedtitle = (TextView) findViewById(R.id.feedTitle);
+    	if (feed == null)
+        {
+        	feedtitle.setText("No RSS Feed Available");
+        	return;
+        } else {
+	        // display UI
+	        adapter = UpdateDisplay();
+	        itemlist.setAdapter(adapter);
+	        
+	        itemlist.setOnItemClickListener(this);
+        }
 	}
 	
 	 class GetRssFeed extends AsyncTask<String, Integer, RSSFeed>{
@@ -107,6 +114,7 @@ public class RssActivity extends Activity implements OnItemClickListener{
 	    
 	    private ArrayAdapter<RSSItem> UpdateDisplay()
 	    {
+	    	
 	        ArrayAdapter<RSSItem> adapter = new ArrayAdapter<RSSItem>(
 	        			this,
 	        			R.layout.rssrow,
